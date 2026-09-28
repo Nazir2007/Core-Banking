@@ -1,0 +1,7 @@
+package version01;
+
+public class Cbproto {
+    public static void main(String[] args) {
+        System.out.println("this is system check");
+    }
+}
