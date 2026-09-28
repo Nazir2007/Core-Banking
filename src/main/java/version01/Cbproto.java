@@ -9,7 +9,7 @@ public class Cbproto {
     public static final String ANSI_RED="\u001B[31m";
     public static final String ANSI_GREEN="\u001B[32m";
     public static final String ANSI_DARK_YELLOW="\u001B[33m";
-    public static final String ANSİ_RESET="\u001B[0m";
+    public static final String ANSI_RESET="\u001B[0m";
     public static void main(String[] args) {
         System.out.println("Welcome to the bank N ");
         Scanner inp=new Scanner(System.in);
@@ -25,12 +25,12 @@ public class Cbproto {
             int cho=inp.nextInt();
             switch (cho) {
                 case 1:
-                    System.out.print(ANSI_GREEN+"Amount + "+"$"+ANSİ_RESET);
+                    System.out.print(ANSI_GREEN+"Amount + "+"$"+ANSI_RESET);
                     double incAmount=inp.nextDouble();
                     increase(incAmount);
                     break;
                 case 2:
-                    System.out.print(ANSI_RED+"Amount - "+"$"+ANSİ_RESET);
+                    System.out.print(ANSI_RED+"Amount - "+"$"+ANSI_RESET);
                     double decAmount=inp.nextDouble();
                     decrease(decAmount);
                     break;
@@ -53,6 +53,6 @@ public class Cbproto {
         Cbproto.vv-=amount;
     }
     public static void show(){
-        System.out.println(ANSI_DARK_YELLOW+"Your current balance is "+Cbproto.vv+"$"+ANSİ_RESET);
+        System.out.println(ANSI_DARK_YELLOW+"Your current balance is "+Cbproto.vv+"$"+ANSI_RESET);
     }
 }
